@@ -1,0 +1,26 @@
+{
+  "name": "pippa_library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint && node_modules/.bin/mocha",
+    "lint": "./node_modules/.bin/eslint index.js ./src ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pippa-io/pippa_library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pippa-io/pippa_library/issues"
+  },
+  "homepage": "https://github.com/pippa-io/pippa_library#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "mocha": "^5.2.0"
+  }
+}
