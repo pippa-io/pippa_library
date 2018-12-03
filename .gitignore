@@ -2,10 +2,4 @@
 npm-debug.log*
 .DS_Store
 node_modules
-.creds
-tests/**.tsv
 /node_modules
-
-
-# production
-/build
