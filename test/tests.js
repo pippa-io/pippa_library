@@ -11,3 +11,7 @@ describe('Root', () => {
 describe('Devices', () => {
     require('./devices.tests')();
 });
+
+describe('BlacklistUrls', () => {
+    require('./blacklisturls.tests')();
+});
