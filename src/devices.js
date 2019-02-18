@@ -30,6 +30,10 @@ module.exports.labelizeUserAgent = (userAgent) => {
     } else if (userAgent.match(/Macintosh|Mac/)) {
         device = DESKTOP;
         platform = 'mac';
+    } else if (userAgent.match(/watchOS\//)) {
+        device = SMART_SPEAKER;
+        platform = 'Apple';
+        player = 'Apple Watch';
     } else if (userAgent.match(/Android/)) {
         device = MOBILE;
         platform = ANDROID;
@@ -174,6 +178,12 @@ module.exports.labelizeUserAgent = (userAgent) => {
     }
     else if (userAgent.match(/Deezer\//)) {
         player = 'Deezer';
+    }
+    else if (userAgent.match(/Acast\//)) {
+        player = 'Acast';
+    }
+    else if (userAgent.match(/iHeartRadio\//)) {
+        player = 'iHeartRadio';
     }
 
     else if (
