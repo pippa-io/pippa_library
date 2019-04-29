@@ -72,6 +72,9 @@ module.exports = () => {
             ['(null)/(null) watchOS/5.0.1 model/Watch3,4 hwp/t8004 build/16R381 (6; dt:156)', ['Smart Speakers', 'Apple', 'Apple Watch']],
             ['Acast/1.35.2 (Linux;Android 8.0.0) ExoPlayerLib/2.6.1', ['mobile', 'android', 'Acast']],
             ['iHeartRadio/8.17.0 (Android 8.0.0; XT1635-01 Build/ODN27.76-12-30-8-1)', ['mobile', 'android', 'iHeartRadio']],
+            ['Luminary/70 CFNetwork/978.0.7 Darwin/18.5.0', [null, null, 'Luminary']],
+            ['Luminary/1.0.2 build 57/Android SDK 25', ['mobile', 'android', 'Luminary']],
+            ['Luminary/1.0.3 build 71/iOS 12.2', ['mobile', 'iPhone', 'Luminary']]
         ];
 
         userAgents.map(ua => {
