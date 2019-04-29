@@ -124,6 +124,10 @@ module.exports.labelizeUserAgent = (userAgent) => {
         device = MOBILE;
         platform = ANDROID;
     }
+    else if (userAgent.match(/Luminary/)) {
+        player = 'Luminary';
+    }     
+    
 
     // AMAZON
     else if (userAgent.match(/^AlexaMediaPlayer/)) {
