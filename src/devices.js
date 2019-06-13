@@ -189,6 +189,18 @@ module.exports.labelizeUserAgent = (userAgent) => {
     else if (userAgent.match(/iHeartRadio\//)) {
         player = 'iHeartRadio';
     }
+    else if (userAgent.match(/MajelanApp/)) {
+        player = 'Majelan';
+    }
+    else if (userAgent.match(/Sybel\//)) {
+        player = 'Sybel';
+    }
+    else if (userAgent.match(/eeko\//)) {
+        player = 'Eeko';
+    }
+    else if (userAgent.match(/tootak\//)) {
+        player = 'Tootak';
+    }
 
     else if (
         userAgent.match(/Apache-HttpClient/) ||

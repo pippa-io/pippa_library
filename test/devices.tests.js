@@ -74,7 +74,11 @@ module.exports = () => {
             ['iHeartRadio/8.17.0 (Android 8.0.0; XT1635-01 Build/ODN27.76-12-30-8-1)', ['mobile', 'android', 'iHeartRadio']],
             ['Luminary/70 CFNetwork/978.0.7 Darwin/18.5.0', [null, null, 'Luminary']],
             ['Luminary/1.0.2 build 57/Android SDK 25', ['mobile', 'android', 'Luminary']],
-            ['Luminary/1.0.3 build 71/iOS 12.2', ['mobile', 'iPhone', 'Luminary']]
+            ['Luminary/1.0.3 build 71/iOS 12.2', ['mobile', 'iPhone', 'Luminary']],
+            ['MajelanApp 1.0 build 12 (iPhone; iOS 12.1; en_US)', ['mobile', 'iPhone', 'Majelan']],
+            ['Sybel/4894 CFNetwork/976 Darwin/18.2.0', [null, null, 'Sybel']],
+            ['eeko/5 CFNetwork/894 Darwin/17.4.0', [null, null, 'Eeko']],
+            ['tootak/5 CFNetwork/978.0.7 Darwin/18.6.0', [null, null, 'Tootak']]
         ];
 
         userAgents.map(ua => {
