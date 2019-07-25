@@ -31,9 +31,9 @@ module.exports.labelizeUserAgent = (userAgent) => {
         device = DESKTOP;
         platform = 'mac';
     } else if (userAgent.match(/watchOS\//)) {
-        device = SMART_SPEAKER;
+        device = MOBILE;
         platform = 'Apple';
-        player = 'Apple Watch';
+        player = 'Apple Podcast';
     } else if (userAgent.match(/Android/)) {
         device = MOBILE;
         platform = ANDROID;
@@ -46,8 +46,11 @@ module.exports.labelizeUserAgent = (userAgent) => {
     }
 
 
-
-    if (userAgent.match(/AppleCoreMedia|Podcasts|itunesstored\//)) {
+    if (userAgent.match(/AppleCoreMedia\/(.*)Apple Watch/)) {
+        device = SMART_SPEAKER;
+        platform = 'Apple';
+        player = 'Apple Watch';
+    } else if (userAgent.match(/AppleCoreMedia|Podcasts|itunesstored\//)) {
         player = 'Apple Podcast';
     } else if (userAgent.match(/Overcast/)) {
         player = 'Overcast';
