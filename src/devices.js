@@ -204,6 +204,12 @@ module.exports.labelizeUserAgent = (userAgent) => {
     else if (userAgent.match(/tootak\//)) {
         player = 'Tootak';
     }
+    else if (userAgent.match(/AmazonMusic/)) {
+        player = 'Amazon Music';
+    }
+    else if (userAgent.match(/Audible/)) {
+        player = 'Audible';
+    }
 
     else if (
         userAgent.match(/Apache-HttpClient/) ||

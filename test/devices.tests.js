@@ -79,7 +79,10 @@ module.exports = () => {
             ['MajelanApp 1.0 build 12 (iPhone; iOS 12.1; en_US)', ['mobile', 'iPhone', 'Majelan']],
             ['Sybel/4894 CFNetwork/976 Darwin/18.2.0', [null, null, 'Sybel']],
             ['eeko/5 CFNetwork/894 Darwin/17.4.0', [null, null, 'Eeko']],
-            ['tootak/5 CFNetwork/978.0.7 Darwin/18.6.0', [null, null, 'Tootak']]
+            ['tootak/5 CFNetwork/978.0.7 Darwin/18.6.0', [null, null, 'Tootak']],
+            ['AmazonMusic', [null, null, 'Amazon Music']],
+            ['Audible', [null, null, 'Audible']]
+
         ];
 
         userAgents.map(ua => {
